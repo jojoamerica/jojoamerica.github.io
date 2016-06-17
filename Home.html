@@ -2,44 +2,35 @@
 <html lang="en">
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="/css/kube.min.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 <body>
-<!--<div class="bg-fix"></div>-->
-<row centered>
-    <span type="black" class="btn" big>Home</span>
-    <a class="btn" type="primary" href="Tricks.html" big>Tricks</a>
-    <a class="btn" type="primary" href="People.html" big>People</a>
-</row>
-<row centered>
-    <h1 class="title">This is my homepage.</h1>
-</row>
-
-<row centered>
-    <h2>This website is all about:</h2>
-</row>
-<row centered>
-    <column cols="6" class="border-10">
-        <blocks cols="2" class="start end">
-            <div class="border-1 vertical-center text-right">
-                <h4>Skateboarding tricks</h4>
-            </div>
-            <div class="border-1">
-                <a href="Tricks.html">
-                    <img src="/Images/tricks.jpg">
-                </a>
-            </div>
-            <div class="border-1 vertical-center text-right">
-                <h4>And Pro Skaters</h4>
-            </div>
-            <div class="border-1">
-                <a href="People.html">
-                    <img src="/Images/pros.jpg">
-                </a>
-            </div>
-        </blocks>
-    </column>
-</row>
+<table class="menu">
+    <tr>
+        <td>Home
+        <td><a href="Tricks.html">Tricks </a>
+        <td><a href="People.html">People </a>
+    </tr>
+</table>
+<br><br><br><br>
+<h1>This is my homepage.</h1>
+<h2>This website is all about:</h2>
+<table class="content">
+    <tr>
+        <td>Skateboarding tricks
+        <td><a href="Tricks.html">
+            <div style="height:237px; background: url('/Images/skateboard.jpg') center top no-repeat;background-size: cover;"></div>
+            <!--<img src="/Images/skateboard.jpg" width=300 height=237>-->
+        </a>
+    </tr>
+    <tr>
+        <td>And Pro Skaters
+        <td>
+            <a href="People.html">
+                <div style="height:237px; width:300px; background: url('/Images/AndySchrock2.jpg') center top no-repeat;background-size: cover;"></div>
+                <!--<img src="/Images/AndySchrock2.jpg" width=300 height=237>-->
+            </a>
+    </tr>
+</table>
 </body>
 </html>
