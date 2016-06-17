@@ -1,0 +1,38 @@
+body {
+  background-image: url("/Images/background.jpg");
+}
+
+.menu {
+  border-spacing: 0;
+  margin:         0 auto;
+}
+
+.menu td {
+  background-color: #000;
+  font-size:        xx-large;
+  color:            #fff;
+  padding:          10px;
+}
+
+.menu td a {
+  color: #1ac6ff;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.content {
+  border:         10px outset grey;
+  border-spacing: 10px;
+  margin:         0 auto;
+  font-family:    Arial, sans-serif;
+}
+
+.content td {
+  background-color: rgba(255, 255, 255, .75);
+  border:           1px solid grey;
+  padding:          5px;
+  line-height:      1.3;
+}
