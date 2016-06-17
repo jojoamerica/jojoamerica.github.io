@@ -1,29 +1,65 @@
 <html>
- <head>
-  <title>Home</title>
-  <style>
-  body {
-	   background-image: url("../Images/background.jpg");
-       }
-  </style>
- </head>
- <body>
-  <table border=0 cellspacing=0 cellpadding=10 align=center>
-   <tr>
-    <td bgcolor="#000000"><font size="6" color=#ffffff>Home</font>
-    <td bgcolor="#000000"><font size="6"><a href="Tricks.html" style="color: #1ac6ff">Tricks </a></font>
-    <td bgcolor="#000000"><font size="6"><a href="People.html" style="color: #1ac6ff">People </a></font>
-   </tr>
-  </table><br><br><br><br>
-  <h1 align=center>This is my homepage.</h1>
-  <h2 align=center>This website is all about:</h2>
-  <table border=10 cellspacing=10 cellpadding=5 align=center style="font-family:arial">
-   <tr>
-    <td>Skateboarding tricks<td><a href="Tricks.html"><img src="../Images/skateboard.jpg" width=300 height=237></a>
-   </tr>
-   <tr>
-    <td>And Pro Skaters<td><a href="People.html"><img src="../Images/AndySchrock2.jpg" width=300 height=237></a>
-   </tr>
-  </table>
- </body>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/kube.min.css">
+    <style>
+        body {
+            background-image: url("/Images/background.jpg");
+        }
+
+        div.bg-fix {
+            width:            100%;
+            height:           100%;
+            position:         fixed;
+            background-color: rgba(255, 255, 255, .7);
+            z-index:          -1;
+        }
+    </style>
+</head>
+<body>
+<div class="bg-fix"></div>
+<row centered>
+    <span type="black" class="btn" big>Home</span>
+    <a class="btn" type="primary" href="Tricks.html" big>Tricks</a>
+    <a class="btn" type="primary" href="People.html" big>People</a>
+</row>
+<row centered>
+    <h1 class="title">This is my homepage.</h1>
+</row>
+
+<row centered>
+
+    <h2>This website is all about:</h2>
+</row>
+<row>
+    <column cols="6" offset="3">
+        <row>
+            <column cols="4">
+                <div class="text-right"><h3>Skateboarding tricks</h3></div>
+            </column>
+            <column cols="6">
+                <div>
+                    <a href="Tricks.html">
+                        <img src="/Images/tricks.jpg">
+                    </a>
+                </div>
+            </column>
+        </row>
+        <row>
+            <column cols="4">
+                <div class="text-right">
+                    <h3>And Pro Skaters</h3>
+                </div>
+            </column>
+            <column cols="6">
+                <div>
+                    <a href="People.html">
+                        <img src="/Images/pros.jpg">
+                    </a>
+                </div>
+            </column>
+        </row>
+    </column>
+</row>
+</body>
 </html>
